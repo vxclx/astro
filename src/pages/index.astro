@@ -10,6 +10,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+    	  .custom-image {
+     	  width: 300px; /* 设置图片的宽度 */
+      	  height: 200px; /* 设置图片的高度 */
+          object-fit: cover; /* 保持图片比例 */
+          display: block; /* 确保图片单独占据一行 */
+          margin-bottom: 10px; /* 可选：增加底部间距 */
+    	  }
+ 		</style>
 	</head>
 	<body>
 		<Header />
@@ -19,7 +28,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<p>
 				1.蜜丝婷：<br>
 						银盾、蓝盾、白盾、4K系列全肤质蓝盾：一出油就化，不出油就卡粉	
-						<img src="./图片1.png" alt="图片1">
+						<img src="./图片1.png" alt="图片1" class="custom-image">
 							<br>
 						银盾：定位是适合干皮，但是干皮用了只会干到卡粉
 						<img src="./图片2.png" alt="图片2" class="product-image">
